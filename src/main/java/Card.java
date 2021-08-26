@@ -1,4 +1,4 @@
-package com.company;
+package main.java;
 
 public class Card {
     //Instance Variable
@@ -9,6 +9,11 @@ public class Card {
     public Card(){
 
     }
+    //Default Constructor Override
+    public Card(String cardName){
+        this.cardName = cardName;
+    }
+
     //Default Constructor Override
     public Card(String cardName, String cardDefinition){
         this.cardName = cardName;
@@ -28,6 +33,7 @@ public class Card {
     public void setDefinition(String cardDefinition){
         this.cardDefinition = cardDefinition;
     }
+
     //Get Flashcard Definition
     public String getDefinition(){
         return cardDefinition;
